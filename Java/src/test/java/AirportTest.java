@@ -1,7 +1,7 @@
 import com.epam.izh.rd.airport.Airport;
 import com.epam.izh.rd.airport.planes.ExperimentalPlane;
 import com.epam.izh.rd.airport.models.ClassificationLevel;
-import com.epam.izh.rd.airport.models.ExperimentalTypes;
+import com.epam.izh.rd.airport.models.ExperimentalType;
 import com.epam.izh.rd.airport.models.MilitaryType;
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -29,8 +29,8 @@ public class AirportTest {
             new MilitaryPlane("F-15", 1500, 12000, 10000, MilitaryType.FIGHTER),
             new MilitaryPlane("F-22", 1550, 13000, 11000, MilitaryType.FIGHTER),
             new MilitaryPlane("C-130 Hercules", 650, 5000, 110000, MilitaryType.TRANSPORT),
-            new ExperimentalPlane("Bell X-14", 277, 482, 500, ExperimentalTypes.HIGH_ALTITUDE, ClassificationLevel.SECRET),
-            new ExperimentalPlane("Ryan X-13 Vertijet", 560, 307, 500, ExperimentalTypes.VTOL, ClassificationLevel.TOP_SECRET)
+            new ExperimentalPlane("Bell X-14", 277, 482, 500, ExperimentalType.HIGH_ALTITUDE, ClassificationLevel.SECRET),
+            new ExperimentalPlane("Ryan X-13 Vertijet", 560, 307, 500, ExperimentalType.VTOL, ClassificationLevel.TOP_SECRET)
     );
 
     private static final PassengerPlane PLANE_WITH_MAX_PASSENGER_CAPACITY = new PassengerPlane("Boeing-747", 980, 16100, 70500, 242);

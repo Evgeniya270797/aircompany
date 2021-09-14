@@ -1,5 +1,5 @@
 package com.epam.izh.rd.airport.models;
 
-public enum ExperimentalTypes {
+public enum ExperimentalType {
     HIGH_ALTITUDE, VTOL
 }
